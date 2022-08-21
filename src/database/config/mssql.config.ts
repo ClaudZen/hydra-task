@@ -11,10 +11,14 @@ export class MssqlConfig implements TypeOrmOptionsFactory {
       username: process.env.MSSQL_USERNAME,
       password: process.env.MSSQL_PASSWORD,
       database: process.env.MSSQL_DATABASE,
-      entities: ['**/*.entity{.ts,.js}'],
+      entities: ['./entity/*.entity{.ts,.js}'],
       synchronize: true,
       extra: {
         trustServerCertificate: true,
+      },
+      options: {
+        encrypt: true,
+        enableArithAbort: true,
       },
     };
   }
