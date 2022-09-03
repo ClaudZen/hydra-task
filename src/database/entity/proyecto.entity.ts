@@ -1,7 +1,6 @@
 import {
   Column,
   Entity,
-  Index,
   JoinColumn,
   ManyToOne,
   OneToMany,
@@ -16,7 +15,6 @@ import { ProyectoUsuario } from './proyecto-usuario.entity';
 import { ProyectoUsuarioReporte } from './proyecto-usuario-reporte.entity';
 import { Tarea } from './tarea.entity';
 
-@Index('PK_Proyecto', ['id'], { unique: true })
 @Entity('Proyecto', { schema: 'dbo' })
 export class Proyecto {
   @PrimaryGeneratedColumn({ type: 'int', name: 'ID' })

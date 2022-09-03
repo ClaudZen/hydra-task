@@ -1,14 +1,7 @@
-import {
-  Column,
-  Entity,
-  Index,
-  OneToMany,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { SubTarea } from './sub-tarea.entity';
 import { Tarea } from './tarea.entity';
 
-@Index('PK_TareaFlujoTipo', ['id'], { unique: true })
 @Entity('TareaFlujoTipo', { schema: 'dbo' })
 export class TareaFlujoTipo {
   @PrimaryGeneratedColumn({ type: 'smallint', name: 'ID' })

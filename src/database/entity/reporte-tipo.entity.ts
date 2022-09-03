@@ -1,13 +1,6 @@
-import {
-  Column,
-  Entity,
-  Index,
-  OneToMany,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { Reporte } from './reporte.entity';
 
-@Index('PK_ReporteTipo', ['id'], { unique: true })
 @Entity('ReporteTipo', { schema: 'dbo' })
 export class ReporteTipo {
   @PrimaryGeneratedColumn({ type: 'smallint', name: 'ID' })

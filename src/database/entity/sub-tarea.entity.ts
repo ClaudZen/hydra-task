@@ -1,7 +1,6 @@
 import {
   Column,
   Entity,
-  Index,
   JoinColumn,
   ManyToMany,
   ManyToOne,
@@ -12,7 +11,6 @@ import { PrioridadTipo } from './prioridad-tipo.entity';
 import { Tarea } from './tarea.entity';
 import { TareaFlujoTipo } from './tarea-flujo-tipo.entity';
 
-@Index('PK_SubTarea', ['id'], { unique: true })
 @Entity('SubTarea', { schema: 'dbo' })
 export class SubTarea {
   @PrimaryGeneratedColumn({ type: 'bigint', name: 'ID' })

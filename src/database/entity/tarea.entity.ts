@@ -1,7 +1,6 @@
 import {
   Column,
   Entity,
-  Index,
   JoinColumn,
   JoinTable,
   ManyToMany,
@@ -15,7 +14,6 @@ import { TareaFlujoTipo } from './tarea-flujo-tipo.entity';
 import { PrioridadTipo } from './prioridad-tipo.entity';
 import { Proyecto } from './proyecto.entity';
 
-@Index('PK_Tarea', ['id'], { unique: true })
 @Entity('Tarea', { schema: 'dbo' })
 export class Tarea {
   @PrimaryGeneratedColumn({ type: 'bigint', name: 'ID' })

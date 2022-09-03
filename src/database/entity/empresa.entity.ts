@@ -1,13 +1,11 @@
 import {
   Column,
   Entity,
-  Index,
   OneToMany,
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Proyecto } from './proyecto.entity';
 
-@Index('PK_Empresa', ['id'], { unique: true })
 @Entity('Empresa', { schema: 'dbo' })
 export class Empresa {
   @PrimaryGeneratedColumn({ type: 'int', name: 'ID' })

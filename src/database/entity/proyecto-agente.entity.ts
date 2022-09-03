@@ -1,9 +1,8 @@
-import { Column, Entity, Index, JoinColumn, ManyToOne } from 'typeorm';
+import { Column, Entity, JoinColumn, ManyToOne } from 'typeorm';
 import { Agente } from './agente.entity';
 import { Proyecto } from './proyecto.entity';
 import { ProyectoAgenteTipo } from './proyecto-agente-tipo.entity';
 
-@Index('PK_ProyectoAgente', ['agenteId', 'proyectoId'], { unique: true })
 @Entity('ProyectoAgente', { schema: 'dbo' })
 export class ProyectoAgente {
   @Column('int', { primary: true, name: 'AgenteId' })

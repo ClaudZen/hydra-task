@@ -1,7 +1,6 @@
 import {
   Column,
   Entity,
-  Index,
   JoinColumn,
   JoinTable,
   ManyToMany,
@@ -14,7 +13,6 @@ import { SubTarea } from './sub-tarea.entity';
 import { Tarea } from './tarea.entity';
 import { ProyectoAgente } from './proyecto-agente.entity';
 
-@Index('PK_Agente', ['id'], { unique: true })
 @Entity('Agente', { schema: 'dbo' })
 export class Agente {
   @PrimaryGeneratedColumn({ type: 'int', name: 'ID' })
