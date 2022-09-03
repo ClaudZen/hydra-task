@@ -2,7 +2,7 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Proyecto } from 'src/database/entity';
 import { Repository } from 'typeorm';
-import { ProyectBetweenStatusResponse } from './interface/proyect-between-status-response.interface';
+import { ProyectBetweenStatusResponse } from './response';
 import { ProyectService } from './proyect.service';
 
 describe('ProyectService', () => {

@@ -1,6 +1,6 @@
 import { HttpException, HttpStatus } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { ProyectBetweenStatusResponse } from './interface/proyect-between-status-response.interface';
+import { ProyectBetweenStatusResponse } from './response';
 import { ProyectController } from './proyect.controller';
 import { ProyectService } from './proyect.service';
 

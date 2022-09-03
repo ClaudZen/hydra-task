@@ -5,7 +5,7 @@ import {
   HttpStatus,
   Query,
 } from '@nestjs/common';
-import { ProyectBetweenStatusResponse } from './interface/proyect-between-status-response.interface';
+import { ProyectBetweenStatusResponse } from './response';
 import { ProyectService } from './proyect.service';
 
 @Controller('proyect')

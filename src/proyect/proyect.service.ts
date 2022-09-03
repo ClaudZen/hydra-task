@@ -8,7 +8,7 @@ import {
   ProyectoEstadoTipo,
 } from 'src/database/entity';
 import { Repository } from 'typeorm';
-import { ProyectBetweenStatusResponse } from './interface/proyect-between-status-response.interface';
+import { ProyectBetweenStatusResponse } from './response';
 
 @Injectable()
 export class ProyectService {
